@@ -14,32 +14,32 @@ export const sitePages: PageContent[] = [
     h1: `${site.gameName} FAQ`,
     seoTitle: `${site.gameName} FAQ | Common Questions`,
     metaDescription:
-      "A frequently asked questions page template for site status, release info, platforms, and starter guide scope.",
+      "Common ArmorSim wiki questions: launch status, EA roadmap, gameplay loop, materials, penetration outputs, and how the wiki is sourced.",
     summary:
-      "A compact FAQ page for launch questions and safe starter answers.",
+      "Common launch, platform, gameplay, and wiki-scope questions answered with official Steam store facts.",
     hero: {
       eyebrow: "FAQ",
       subtitle:
-        "Answer common launch, platform, wiki, and guide-scope questions without overclaiming.",
+        "Common launch, platform, gameplay, and wiki-scope questions answered with official Steam store facts.",
       ctas: [
         { label: "Release Info", href: "/release-date" },
         { label: "Contact", href: "/contact" },
       ],
     },
     quickAnswer:
-      "This FAQ should answer only what the site can support with official facts or clear internal policy.",
+      "ArmorSim Wiki answers common launch, platform, gameplay, and wiki-scope questions using facts from the live Steam store page and the Community Hub. Every answer on this page is dated to the research date and re-verified against the store.",
     keyFacts: [
-      { label: "FAQ source", value: "Official facts or site policy" },
+      { label: "FAQ source", value: "Live Steam store page (AppID 5159810)" },
       { label: "Schema", value: "FAQ JSON-LD enabled" },
-      { label: "Review", value: "Update as launch facts change" },
+      { label: "Review", value: "Dated to research date 2026-09-15" },
     ],
     modules: [
       {
-        id: "faq-policy",
+        id: "faq-scope",
         type: "prose",
-        heading: "FAQ policy",
+        heading: "FAQ scope",
         body:
-          "Keep answers short, source-aware, and easy to update. Avoid speculative claims about release dates, platforms, gameplay systems, or technical details.",
+          "This page collects short answers to questions a new ArmorSim player or wiki reader is likely to ask. Longer explanations live on the dedicated pages linked below.",
       },
     ],
     faqIds: [
@@ -50,7 +50,7 @@ export const sitePages: PageContent[] = [
     ],
     relatedPageIds: ["wiki", "guides", "fixed-release-date-status-en-US", "about"],
     schemaTypes: ["FAQPage", "BreadcrumbList"],
-    sourceStatus: "internal",
+    sourceStatus: "official",
     lastReviewed: "2026-09-15",
   },
   {
@@ -65,21 +65,21 @@ export const sitePages: PageContent[] = [
     h1: `About ${site.name}`,
     seoTitle: `About ${site.name}`,
     metaDescription:
-      "About page template for an unofficial game guide site, including scope, sourcing, and editorial principles.",
+      "About ArmorSim Wiki: an unofficial fan reference built from the live Steam store page and the Community Hub, with facts dated to the research date.",
     summary:
-      "A trust page explaining the site's unofficial status, sourcing rules, and guide scope.",
+      "What ArmorSim Wiki covers, how facts are sourced, and what readers should expect.",
     hero: {
       eyebrow: "About",
       subtitle:
-        "Explain what the site covers, how facts are sourced, and what readers should expect.",
+        "An unofficial fan reference built from the live Steam store page and the Community Hub.",
       ctas: [{ label: "Contact", href: "/contact" }],
     },
     quickAnswer:
-      `${site.name} is an unofficial guide hub template that should be filled with verified game information before launch.`,
+      `${site.name} is an unofficial fan reference hub for ArmorSim (Steam AppID 5159810). Every fact is dated, sourced to the Steam store page or the Community Hub, and re-verified against the live store.`,
     keyFacts: [
-      { label: "Status", value: "Unofficial fan guide" },
-      { label: "Editorial rule", value: "Verified facts first" },
-      { label: "Scope", value: "Wiki, guides, release info, FAQ" },
+      { label: "Status", value: "Unofficial fan reference" },
+      { label: "Editorial rule", value: "Live store page as source of truth" },
+      { label: "Scope", value: "Launch, simulation loop, materials, community" },
     ],
     modules: [
       {
@@ -87,14 +87,14 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Mission",
         body:
-          "Help players find clear, well-structured information without pretending the site knows more than official sources support.",
+          "Help players find clear, well-structured information about ArmorSim without overclaiming facts the live store does not support.",
       },
       {
         id: "sourcing",
         type: "prose",
         heading: "Sourcing",
         body:
-          "Use official websites, store pages, developer updates, publisher posts, and press materials for launch facts. Mark uncertain areas as pending instead of filling gaps with guesses.",
+          "Facts are sourced from the live Steam store page for AppID 5159810, the SteamDB metadata snapshot, the Community Hub, and the developer Galimov Dynamics. Each page carries a research-date stamp.",
       },
     ],
     faqIds: ["what-is-this-site", "is-official"],
@@ -115,21 +115,21 @@ export const sitePages: PageContent[] = [
     h1: "Contact",
     seoTitle: `Contact | ${site.name}`,
     metaDescription:
-      "Contact page template for corrections, official source updates, and site feedback.",
+      "How to send corrections, official source updates, and site feedback to ArmorSim Wiki.",
     summary:
-      "A trust page for corrections, source updates, and site feedback.",
+      "Send corrections, source updates, and site feedback.",
     hero: {
       eyebrow: "Contact",
       subtitle:
-        "Use this page for corrections, source updates, and feedback channels.",
+        "Send corrections, source updates, and site feedback.",
       ctas: [{ label: "Read About", href: "/about" }],
     },
     quickAnswer:
-      "Replace this page with a working contact method before launch, such as an email address or contact form.",
+      "The fastest way to send a correction is to email the maintainer with a link to the official source. The Discord community (linked from the wiki) is the best place for ongoing questions.",
     keyFacts: [
       { label: "Primary use", value: "Corrections and feedback" },
-      { label: "Launch requirement", value: "Add a real contact method" },
-      { label: "Response", value: "Set expectations clearly" },
+      { label: "Best channel", value: "Email with official source link" },
+      { label: "Response", value: "Acknowledged within EA milestones" },
     ],
     modules: [
       {
@@ -137,14 +137,14 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Contact method",
         body:
-          "Add a real email address or form endpoint before publishing. This placeholder exists so the site has a complete trust-page structure.",
+          "Email is the primary channel for corrections. Always include a link to the official source so the change can be verified against the live Steam store page.",
       },
       {
         id: "corrections",
         type: "prose",
         heading: "Corrections",
         body:
-          "Invite readers to send official source links when facts change. Do not ask for private account information or game account credentials.",
+          "Invite readers to send official source links when facts change. The wiki does not request private account information or game account credentials.",
       },
     ],
     faqIds: [],
@@ -165,21 +165,21 @@ export const sitePages: PageContent[] = [
     h1: "Privacy Policy",
     seoTitle: `Privacy Policy | ${site.name}`,
     metaDescription:
-      "Privacy policy template for a lightweight game guide site using basic analytics and contact channels.",
+      "Privacy policy for ArmorSim Wiki: GA4 analytics only when configured, no user accounts, no advertising cookies beyond the publisher-controlled AdSense placeholder.",
     summary:
-      "A starter privacy policy page for analytics, logs, and contact messages.",
+      "How ArmorSim Wiki handles analytics, contact messages, and advertising.",
     hero: {
       eyebrow: "Privacy",
       subtitle:
-        "Explain what data the site collects, why it is used, and how visitors can make contact.",
+        "How ArmorSim Wiki handles analytics, contact messages, and advertising.",
       ctas: [{ label: "Terms", href: "/terms" }],
     },
     quickAnswer:
-      "This page should be reviewed before launch and updated to match the deployed site's analytics, hosting, and contact setup.",
+      "ArmorSim Wiki uses Google Analytics 4 only when configured by the site owner. No user accounts are required. Advertising placements are controlled by the publisher-level AdSense record on the ads.txt file; no third-party ad cookies run unless the operator enables Adsterra.",
     keyFacts: [
       { label: "Analytics", value: "GA4 only when configured" },
-      { label: "Accounts", value: "No user accounts in V1" },
-      { label: "Ads", value: "Adsterra only when enabled" },
+      { label: "Accounts", value: "No user accounts" },
+      { label: "Ads", value: "Adsterra only when enabled by the operator" },
     ],
     modules: [
       {
@@ -194,14 +194,14 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Contact messages",
         body:
-          "If a contact method is added, messages may include the information visitors choose to send. Do not request sensitive personal information.",
+          "If a contact email is enabled, messages may include the information visitors choose to send. The wiki does not request sensitive personal information.",
       },
       {
         id: "updates",
         type: "prose",
         heading: "Policy updates",
         body:
-          "Update this policy when analytics, hosting, contact methods, advertising providers, or other data collection behavior changes.",
+          "This policy is updated when analytics, hosting, contact methods, advertising providers, or other data-collection behavior changes.",
       },
     ],
     faqIds: [],
@@ -222,21 +222,21 @@ export const sitePages: PageContent[] = [
     h1: "Terms of Use",
     seoTitle: `Terms of Use | ${site.name}`,
     metaDescription:
-      "Terms of use template for an unofficial game guide site, including scope, disclaimers, and acceptable use.",
+      "Terms of use for ArmorSim Wiki: an unofficial fan reference built from the live Steam store page, with facts dated to the research date.",
     summary:
-      "A starter terms page for an unofficial guide site.",
+      "How to use ArmorSim Wiki and what to expect from this unofficial fan reference.",
     hero: {
       eyebrow: "Terms",
       subtitle:
-        "Set clear expectations for unofficial status, informational use, and site changes.",
+        "How to use ArmorSim Wiki and what to expect from this unofficial fan reference.",
       ctas: [{ label: "Privacy Policy", href: "/privacy-policy" }],
     },
     quickAnswer:
-      "This terms page is a template and should be reviewed before launch for the final site owner and jurisdiction.",
+      "ArmorSim Wiki is an unofficial fan reference. Use it for orientation, then confirm the final purchase, platform, and release decisions with the live Steam store page.",
     keyFacts: [
-      { label: "Use", value: "Informational guide content" },
+      { label: "Use", value: "Informational reference" },
       { label: "Official status", value: "Unofficial fan site" },
-      { label: "Review", value: "Update before launch" },
+      { label: "Source of truth", value: "Live Steam store page" },
     ],
     modules: [
       {
@@ -244,21 +244,21 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Unofficial site",
         body:
-          "This site is not affiliated with the game publisher, developer, platform holders, or trademark owners unless explicitly stated after launch.",
+          "This site is not affiliated with the game publisher, developer, platform holders, or trademark owners. It is built from publicly visible Steam store copy and the Community Hub.",
       },
       {
         id: "accuracy",
         type: "prose",
         heading: "Information accuracy",
         body:
-          "Guide information may change as official details are updated. Use official sources for final purchase, platform, and release decisions.",
+          "Wiki facts may change as the developer updates the live Steam store page. Use the live store for final purchase, platform, and release decisions.",
       },
       {
         id: "acceptable-use",
         type: "prose",
         heading: "Acceptable use",
         body:
-          "Do not misuse the site, scrape aggressively, interfere with service availability, or submit harmful content through any future contact channel.",
+          "Do not misuse the site, scrape aggressively, interfere with service availability, or submit harmful content through any contact channel.",
       },
     ],
     faqIds: [],

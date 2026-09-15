@@ -1,7 +1,7 @@
 import type { FAQItem } from "@/types/content";
 
 export const faqItems: FAQItem[] = [
-  // Site identity (kept from base template — relevant to ArmorSim)
+  // Site identity FAQs
   {
     id: "what-is-this-site",
     question: "What is ArmorSim Wiki?",

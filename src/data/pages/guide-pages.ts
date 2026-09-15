@@ -14,24 +14,24 @@ export const guidePages: PageContent[] = [
     h1: `${site.gameName} Guides`,
     seoTitle: `${site.gameName} Guides | Beginner Tips and Starter Help`,
     metaDescription:
-      "A starter guides page template for beginner help, early decisions, systems, and future walkthrough categories.",
+      "Index of ArmorSim Wiki guides covering the simulation loop, materials and configuration, penetration mechanics, and replay sharing.",
     summary:
-      "A guide index for beginner help and future walkthrough expansion.",
+      "Index of ArmorSim Wiki guides, organized by the four launch clusters.",
     hero: {
       eyebrow: "Guides",
       subtitle:
-        "Start with safe, general guide categories, then expand into detailed walkthroughs after verified demand appears.",
+        "Index of ArmorSim Wiki guides, organized by the four launch clusters.",
       ctas: [
         { label: "Open Wiki", href: "/wiki" },
         { label: "Release Info", href: "/release-date" },
       ],
     },
     quickAnswer:
-      "V1 guides should organize the future help structure without inventing unverified walkthrough details.",
+      "ArmorSim Wiki guides cover the simulation loop, the three solvers (NORMAL / ADVANCED / ULTRA), the 14 armor materials, the four penetrator cores, and the replay-sharing workflow. Every guide is sourced from the live Steam store page.",
     keyFacts: [
-      { label: "Guide depth", value: "Starter structure" },
-      { label: "Avoid", value: "Unverified builds, loot, maps, or quest steps" },
-      { label: "Next upgrade", value: "Full guide pages after content research" },
+      { label: "Guide depth", value: "Launch reference surface" },
+      { label: "Source", value: "Live Steam store page (AppID 5159810)" },
+      { label: "Last reviewed", value: "Research date 2026-09-15" },
     ],
     modules: [
       {
@@ -39,21 +39,21 @@ export const guidePages: PageContent[] = [
         type: "prose",
         heading: "Beginner guide",
         body:
-          "Use this section for safe onboarding advice grounded in official descriptions. Avoid specific tactics unless they are verified by official material or later play research.",
+          "Start with the beginner's guide for the first run: open the scene editor, add a plate, set thickness/angle/material/spacing, pick a penetrator, run NORMAL, and read the seven penetration outputs.",
       },
       {
         id: "systems",
         type: "prose",
         heading: "Systems guide categories",
         body:
-          "Add confirmed categories such as combat, crafting, classes, exploration, quests, equipment, difficulty, or co-op only after official sources support them.",
+          "The four launch clusters — Launch & Status, Simulation Loop, Materials & Configuration, Community — group the fixed pages. Each cluster carries its own internal links and a research-date stamp.",
       },
       {
         id: "future-guides",
         type: "prose",
-        heading: "Future guide expansion",
+        heading: "Roadmap guides",
         body:
-          "After launch, split high-demand topics into dedicated pages. V1 keeps this page as a stable guide index so the site is useful without pretending to be complete.",
+          "After each EA milestone, the wiki refreshes the relevant cluster pages and the home module grid to reflect the latest store description.",
       },
     ],
     faqIds: [],
