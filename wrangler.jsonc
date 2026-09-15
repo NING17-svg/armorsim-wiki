@@ -9,7 +9,7 @@
   },
   "vars": {
     "NEXT_PUBLIC_SITE_URL": "https://armorsim.wiki",
-    "NEXT_PUBLIC_GA_MEASUREMENT_ID": "",
+    "NEXT_PUBLIC_GA_MEASUREMENT_ID": "G-MEJMYPYJC8",
     "NEXT_PUBLIC_BING_SITE_AUTH_CODE": ""
   }
 }
