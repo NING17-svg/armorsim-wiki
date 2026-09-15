@@ -113,6 +113,7 @@ export const homePage: PageContent = {
         { title: "Armor materials", summary: "14 documented entries with constant tags.", href: "/armor-materials" },
         { title: "Ammunition", summary: "American, Soviet/Russian, German service rounds + 4 custom cores.", href: "/ammunition" },
         { title: "Armor configurations", summary: "Layered, spaced, reactive, ceramic, shaped-charge.", href: "/armor-configurations" },
+        { title: "First-test recipes", summary: "Solver + material + penetrator + output per configuration.", href: "/first-test-recipes" },
         { title: "Replay sharing", summary: "Couple-of-MB ULTRA replay files.", href: "/replay-sharing" },
       ],
     },

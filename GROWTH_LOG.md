@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-16 - First-test recipes page added
+
+- Task: Add `/first-test-recipes` so players can set up a meaningful first solve for each of the five named configurations (layered, spaced, reactive, ceramic, shaped-charge) without cross-referencing four separate pages.
+- Files changed: `src/data/pages/materials-pages.ts`, `src/data/pages/home.ts`, `src/data/pages/simulation-loop-pages.ts`, `src/data/faq.ts`, `src/lib/content.ts`, `CONTENT_INDEX.md`.
+- URLs affected: New page at `/first-test-recipes`; updated related/hero links from `/`, `/beginners-guide`, `/armor-configurations`.
+- SEO/GEO changed: New wiki/guide page with Article + FAQPage schema; page added to Materials & Configuration cluster module on the home grid; new FAQ entries (`recipe-first-output`, `recipe-variables`, `spaced-gap-effect`, `ceramic-plug-ejection`) and reuse of `reactive-solver`.
+- Content rule honored: Each recipe names the required solver, the material pairing, the penetrator family, and the first output to read; thickness, angle, and spacing are explicitly flagged as test variables, not fixed by the recipe. Reactive armor recipe calls out that NORMAL produces misleading results and requires ADVANCED.
+- Verification: Typecheck, lint, template/content/indexnow validation, full build, and rendered SEO validation all pass locally before publish.
+
 ### 2026-09-15 - Adsterra integration populated
 
 - Task: Replace the six empty Adsterra placeholder values with real unit codes collected from the publisher dashboard.

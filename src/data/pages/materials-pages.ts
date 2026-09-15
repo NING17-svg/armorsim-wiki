@@ -251,7 +251,167 @@ export const armorConfigurations: PageContent = {
     },
   ],
   faqIds: ["reactive-solver", "best-spaced-array", "shaped-charge-incidence"],
-  relatedPageIds: ["fixed-armor-materials-guide-en-US", "fixed-solver-modes-comparison-en-US", "fixed-penetration-mechanics-en-US"],
+  relatedPageIds: ["fixed-armor-materials-guide-en-US", "fixed-solver-modes-comparison-en-US", "fixed-penetration-mechanics-en-US", "fixed-first-test-recipes-en-US"],
+  schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
+  sourceStatus: "official",
+  lastReviewed: "2026-09-15",
+};
+
+export const firstTestRecipes: PageContent = {
+  id: "fixed-first-test-recipes-en-US",
+  translationKey: "first-test-recipes",
+  locale: "en-US",
+  routeKind: "fixed",
+  slug: "first-test-recipes",
+  url: "/first-test-recipes",
+  pageType: "guides",
+  presentation: { shell: "content", variant: "reading-right-rail" },
+  h1: "ArmorSim First-Test Recipes by Configuration",
+  seoTitle: "ArmorSim First-Test Recipes: Solver, Material, Penetrator, Output",
+  metaDescription:
+    "One recipe per named ArmorSim configuration: required solver, material pairing, penetrator family, and the output to read first for layered, spaced, reactive, ceramic, and shaped-charge setups.",
+  summary:
+    "Run a meaningful first solve for each of the five named ArmorSim configurations without cross-referencing four separate pages.",
+  hero: {
+    eyebrow: "Materials & Configuration",
+    subtitle:
+      "Solver, material, penetrator, and first output for layered, spaced, reactive, ceramic, and shaped-charge armor.",
+    ctas: [
+      { label: "Armor configurations", href: "/armor-configurations" },
+      { label: "Solver modes", href: "/solver-modes" },
+    ],
+  },
+  quickAnswer:
+    "Pick the solver, material, and penetrator from the recipe that matches the configuration you want to test, then read the listed output first. Layered, spaced, and ceramic setups can start on NORMAL; reactive armor packs must use ADVANCED or the output is misleading; shaped-charge defense is built at normal incidence and reads the per-layer ballistic limit. Thickness, angle, and spacing are not fixed by the recipe — they are the test variables you adjust to answer your specific question.",
+  keyFacts: [
+    { label: "Configurations covered", value: "Layered, spaced, reactive, ceramic, shaped-charge" },
+    { label: "Required solver for reactive", value: "ADVANCED (NORMAL produces misleading outputs)" },
+    { label: "Penetrator family", value: "National service round (American, Soviet/Russian, or German)" },
+    { label: "First output to read", value: "Listed per configuration; residual velocity is the default" },
+  ],
+  modules: [
+    {
+      id: "recipe-summary",
+      type: "data-table",
+      heading: "Recipe summary",
+      columns: [
+        { key: "configuration", label: "Configuration" },
+        { key: "solver", label: "Solver" },
+        { key: "material", label: "Material pairing" },
+        { key: "penetrator", label: "Penetrator family" },
+        { key: "output", label: "First output to read" },
+      ],
+      rows: [
+        {
+          configuration: "Layered stack",
+          solver: "NORMAL or ADVANCED",
+          material: "Two or more RHA plates in series",
+          penetrator: "Any national service round",
+          output: "Ballistic limit",
+        },
+        {
+          configuration: "Spaced array",
+          solver: "NORMAL or ADVANCED",
+          material: "Two RHA plates separated by an air gap",
+          penetrator: "Any national service round",
+          output: "Residual velocity",
+        },
+        {
+          configuration: "Reactive armor packs",
+          solver: "ADVANCED required",
+          material: "RHA back plate plus reactive pack layer",
+          penetrator: "Service HEAT round or custom core",
+          output: "Per-layer ballistic limit",
+        },
+        {
+          configuration: "Ceramic with backing",
+          solver: "NORMAL, ADVANCED, or ULTRA",
+          material: "Ceramic face plate over ductile backing",
+          penetrator: "Any national service round",
+          output: "Plug ejection",
+        },
+        {
+          configuration: "Shaped-charge defense",
+          solver: "ADVANCED or ULTRA",
+          material: "Shaped-charge defense material in front of RHA",
+          penetrator: "Service HEAT round at normal incidence",
+          output: "Per-layer ballistic limit and residual velocity",
+        },
+      ],
+    },
+    {
+      id: "variables-callout",
+      type: "callout",
+      tone: "tip",
+      title: "Thickness, angle, and spacing are your test variables",
+      body:
+        "Every recipe below lists a starting configuration. Thickness, angle, and spacing are not part of the recipe — they are the variables you adjust to answer the question you actually want to ask. Change one at a time and re-run before changing another.",
+    },
+    {
+      id: "recipe-layered",
+      type: "prose",
+      heading: "Recipe: layered stack",
+      body:
+        "Place two or more plates in series with no air gap between them. Start with RHA steel so the result is comparable to the baseline single-plate solve from the beginner's guide. Use a national service round so the penetrator behaves predictably. NORMAL is acceptable for two-plate stacks; switch to ADVANCED if you add a third plate or mix materials, because per-layer energy accounting only shows up on ADVANCED. Read the ballistic limit first; that is the velocity at which the stack is expected to perforate. Residual velocity and plug ejection are the secondary checks for stack effectiveness.",
+      links: [
+        { label: "Beginner guide", href: "/beginners-guide" },
+        { label: "Penetration mechanics", href: "/penetration-mechanics" },
+      ],
+    },
+    {
+      id: "recipe-spaced",
+      type: "prose",
+      heading: "Recipe: spaced array",
+      body:
+        "Place two RHA plates with an air gap between them. The gap is the variable — start with a small gap (close enough that the stack still acts as a single thick plate) and a larger gap (far enough that the penetrator loses velocity between hits) to see the spaced-armor effect. NORMAL is fine for the first run; switch to ADVANCED if you want per-layer energy accounting. Residual velocity is the output that shows whether the gap helped: a lower residual velocity than the equivalent thickness solid plate means the spacing is doing useful work.",
+      links: [{ label: "Armor configurations", href: "/armor-configurations" }],
+    },
+    {
+      id: "recipe-reactive",
+      type: "callout",
+      tone: "caution",
+      title: "Reactive armor recipe — ADVANCED is required",
+      body:
+        "Place the reactive pack layer over an RHA back plate. Pick a service HEAT round or a custom core that approximates a shaped-charge jet. ADVANCED is required — NORMAL treats the reactive pack as a single integrated plate and the residual velocity output is misleading. Read the per-layer ballistic limit first; ADVANCED exposes the energy absorbed by the reactive pack separately from the RHA plate. If you only get one number, residual velocity after the full stack is the single-field check.",
+    },
+    {
+      id: "recipe-ceramic",
+      type: "prose",
+      heading: "Recipe: ceramic with backing",
+      body:
+        "Place a ceramic face plate over a ductile backing layer (the documented ceramic-with-backing material handles both layers). Pick any national service round; ceramic with backing is modeled correctly under all three solvers. NORMAL is enough to read the baseline ceramic effect. Plug ejection is the output to watch first — ceramic breaks up the penetrator and the backing catches fragments, so the presence of plug ejection means the ceramic is doing its job. Fragmentation and spall are the secondary reads.",
+      links: [
+        { label: "Armor materials", href: "/armor-materials" },
+        { label: "Penetration mechanics", href: "/penetration-mechanics" },
+      ],
+    },
+    {
+      id: "recipe-shaped-charge",
+      type: "prose",
+      heading: "Recipe: shaped-charge defense",
+      body:
+        "Place the shaped-charge defense material in front of an RHA plate with enough spacing that the jet has time to destabilize before hitting the primary plate. Pick a service HEAT round and build the test at normal incidence first — off-normal angles are an experiment, not a first test. ADVANCED is the safe minimum; ULTRA is appropriate if you want continuum-grade physics on the jet interaction. Read the per-layer ballistic limit first and then the residual velocity after the full stack — together they tell you whether the defense layer disrupted the jet.",
+      links: [{ label: "Armor configurations", href: "/armor-configurations" }],
+    },
+    {
+      id: "after-the-first-solve",
+      type: "prose",
+      heading: "After the first solve",
+      body:
+        "Once the first solve runs cleanly, change one variable at a time and re-run. Increase thickness, change the angle, widen or tighten the spacing, or swap the penetrator to a different national service family. When the differences stop surprising you, move to ADVANCED for any configuration that still reads as a single plate on NORMAL, and reserve ULTRA for shaped-charge or continuum-grade questions where CPU time is acceptable.",
+      links: [
+        { label: "Solver modes", href: "/solver-modes" },
+        { label: "Penetration mechanics", href: "/penetration-mechanics" },
+      ],
+    },
+  ],
+  faqIds: ["reactive-solver", "recipe-first-output", "recipe-variables", "spaced-gap-effect", "ceramic-plug-ejection"],
+  relatedPageIds: [
+    "fixed-armor-configurations-en-US",
+    "fixed-beginners-guide-en-US",
+    "fixed-solver-modes-comparison-en-US",
+    "fixed-armor-materials-guide-en-US",
+  ],
   schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
   sourceStatus: "official",
   lastReviewed: "2026-09-15",

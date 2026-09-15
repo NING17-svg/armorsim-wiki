@@ -18,6 +18,7 @@ import {
   armorMaterialsGuide,
   penetratorsAmmoGuide,
   armorConfigurations,
+  firstTestRecipes,
   replaySharing,
 } from "@/data/pages/materials-pages";
 import {
@@ -42,6 +43,7 @@ const fixedPages: PageContent[] = [
   armorMaterialsGuide,
   penetratorsAmmoGuide,
   armorConfigurations,
+  firstTestRecipes,
   replaySharing,
   discordCommunity,
   wikiFaq,

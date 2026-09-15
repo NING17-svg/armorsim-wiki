@@ -154,15 +154,16 @@ export const beginnersGuide: PageContent = {
       type: "prose",
       heading: "After your first solve",
       body:
-        "Once the first solve runs cleanly, change one variable at a time: increase thickness, change the angle, switch material from RHA to ceramic with backing, or pick a heavier penetrator. Re-run NORMAL after each change to compare outputs. When the differences stop surprising you, move to ADVANCED (layered/spaced arrays, reactive packs) and finally ULTRA.",
+        "Once the first solve runs cleanly, change one variable at a time: increase thickness, change the angle, switch material from RHA to ceramic with backing, or pick a heavier penetrator. Re-run NORMAL after each change to compare outputs. When the differences stop surprising you, move to ADVANCED (layered/spaced arrays, reactive packs) and finally ULTRA. For a meaningful first solve of each named configuration, follow the per-configuration recipe on the first-test recipes page.",
       links: [
         { label: "Solver modes comparison", href: "/solver-modes" },
         { label: "Armor materials guide", href: "/armor-materials" },
+        { label: "First-test recipes", href: "/first-test-recipes" },
       ],
     },
   ],
   faqIds: ["first-solver", "best-beginner-plate", "first-penetrator"],
-  relatedPageIds: ["fixed-gameplay-overview-en-US", "fixed-solver-modes-comparison-en-US", "fixed-penetration-mechanics-en-US"],
+  relatedPageIds: ["fixed-gameplay-overview-en-US", "fixed-solver-modes-comparison-en-US", "fixed-penetration-mechanics-en-US", "fixed-first-test-recipes-en-US"],
   schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
   sourceStatus: "official",
   lastReviewed: "2026-09-15",

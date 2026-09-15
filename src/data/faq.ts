@@ -371,7 +371,7 @@ export const faqItems: FAQItem[] = [
     question: "Which solver handles reactive armor packs?",
     answer:
       "ADVANCED supports reactive armor packs and per-layer energy accounting. Use ADVANCED — not NORMAL — when the stack includes reactive armor packs or spaced arrays.",
-    pageIds: ["fixed-armor-configurations-en-US"],
+    pageIds: ["fixed-armor-configurations-en-US", "fixed-first-test-recipes-en-US"],
     category: "gameplay",
     schemaEligible: true,
     sourceStatus: "official",
@@ -392,6 +392,48 @@ export const faqItems: FAQItem[] = [
     answer:
       "Yes. ArmorSim models shaped-charge jets at normal incidence in the scene editor. Build the defense at normal incidence first, then experiment with off-normal angles.",
     pageIds: ["fixed-armor-configurations-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
+  // First-test recipes
+  {
+    id: "recipe-first-output",
+    question: "Which ArmorSim output should I read first for a new configuration?",
+    answer:
+      "Residual velocity is the default first read across configurations. Ballistic limit is the better first read for a layered stack or a shaped-charge defense; plug ejection is the better first read for ceramic with backing; per-layer ballistic limit is the better first read when reactive packs are involved.",
+    pageIds: ["fixed-first-test-recipes-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "recipe-variables",
+    question: "Are thickness, angle, and spacing part of an ArmorSim recipe?",
+    answer:
+      "No. A recipe names the configuration, the solver, the material pairing, and the penetrator family. Thickness, angle, and spacing are the test variables you adjust to answer the specific question you are asking — change one at a time and re-run.",
+    pageIds: ["fixed-first-test-recipes-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "spaced-gap-effect",
+    question: "How does the gap change a spaced-armor test?",
+    answer:
+      "A wider gap lets the penetrator lose velocity between hits; a tighter gap makes the stack behave more like a single thick plate. Residual velocity is the output that shows the gap is doing useful work — a lower residual velocity than the equivalent solid plate means the spacing is helping.",
+    pageIds: ["fixed-first-test-recipes-en-US"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "ceramic-plug-ejection",
+    question: "Why is plug ejection the first read for ceramic with backing?",
+    answer:
+      "Ceramic breaks up the penetrator and the backing catches fragments. Plug ejection is the output that shows the ceramic is doing its job — its presence means the face plate disrupted the round and the backing layer expelled a disc-shaped piece.",
+    pageIds: ["fixed-first-test-recipes-en-US"],
     category: "gameplay",
     schemaEligible: true,
     sourceStatus: "official",

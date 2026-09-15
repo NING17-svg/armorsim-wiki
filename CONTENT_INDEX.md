@@ -12,13 +12,24 @@ hreflang, sitemap, and route-manifest validation.
 
 | URL | File/Route | Type | Primary Keyword | Search Intent | Primary CTA | Internal-Link Role | Notes |
 |---|---|---|---|---|---|---|---|
-| `/` | `src/data/pages/home.ts` | Landing | Template Game guide | Find the best entry point | Open Wiki / Browse Guides | Hub | Replace with the configured game's main hub intent. |
-| `/wiki` | `src/data/pages/wiki-pages.ts` | Guide | Template Game wiki | Understand confirmed facts | Guides / FAQ | Hub | Keep official fact base and source context here. |
-| `/guides` | `src/data/pages/guide-pages.ts` | Guide | Template Game guides | Find guide topics before launch | Wiki / Release Info | Hub | Do not invent walkthroughs before reliable details exist. |
-| `/release-date` | `src/data/pages/release-pages.ts` | Guide | Template Game release date | Check release timing and platforms | FAQ / Wiki | Supporting hub | Must stay tied to official or store sources. |
-| `/faq` | `src/data/pages/site-pages.ts` | Guide | Template Game FAQ | Get short answers | Release Info / Contact | Answer hub | FAQ schema enabled. |
-| `/about` | `src/data/pages/site-pages.ts` | Utility | about Template Game Guide | Trust and editorial policy | Contact | Trust | Explain unofficial status and sourcing rules. |
-| `/contact` | `src/data/pages/site-pages.ts` | Utility | contact Template Game Guide | Corrections and source updates | About | Trust | Contact channel pending. |
+| `/` | `src/data/pages/home.ts` | Landing | ArmorSim terminal-ballistics hub | Find the best entry point | Release Date / Gameplay / System Requirements | Hub | Home grid links to all four clusters. |
+| `/release-date` | `src/data/pages/launch-pages.ts` | Guide | ArmorSim release date 2026-09-16 | Check release timing | Gameplay / System Requirements | Launch hub | Tied to live Steam store sidebar. |
+| `/demo` | `src/data/pages/launch-pages.ts` | Guide | ArmorSim demo / free trial | Find demo / trial status | Price / Discord | Launch hub | No demo announced as of 2026-09-15. |
+| `/price` | `src/data/pages/launch-pages.ts` | Guide | ArmorSim price / editions | Check EA price and editions | Release Date / Discord | Launch hub | Source from Steam store sidebar. |
+| `/system-requirements` | `src/data/pages/launch-pages.ts` | Guide | ArmorSim system requirements | Check minimum PC specs | Gameplay / Solver modes | Launch hub | Windows 10 64-bit, GTX 1050 / RX 560. |
+| `/gameplay` | `src/data/pages/simulation-loop-pages.ts` | Guide | ArmorSim gameplay / simulation loop | Understand the scene editor loop | Beginner / Solver modes | Simulation hub | Three solvers + free-form scene editor. |
+| `/beginners-guide` | `src/data/pages/simulation-loop-pages.ts` | Guide | ArmorSim beginner guide | First-run walkthrough | Solver modes / Penetration mechanics | Simulation hub | NORMAL first run; per-variable re-test. |
+| `/solver-modes` | `src/data/pages/simulation-loop-pages.ts` | Guide | ArmorSim solver modes (NORMAL / ADVANCED / ULTRA) | Pick the right solver | System Requirements / Gameplay | Simulation hub | ULTRA limited in EA. |
+| `/penetration-mechanics` | `src/data/pages/simulation-loop-pages.ts` | Wiki | ArmorSim penetration mechanics | Decode seven outputs | Beginner / Armor configurations | Simulation hub | Glossary + slow-motion viewer. |
+| `/armor-materials` | `src/data/pages/materials-pages.ts` | Wiki | ArmorSim armor materials | Compare the 14 documented materials | Armor configurations / Penetration mechanics | Materials hub | Tagged constants. |
+| `/ammunition` | `src/data/pages/materials-pages.ts` | Wiki | ArmorSim ammunition / penetrators | Compare service families + custom cores | Penetration mechanics / Armor configurations | Materials hub | 3 service families + 4 custom cores. |
+| `/armor-configurations` | `src/data/pages/materials-pages.ts` | Wiki | ArmorSim armor configurations | Build layered/spaced/reactive stacks | Armor materials / Penetration mechanics | Materials hub | Five named configurations. |
+| `/first-test-recipes` | `src/data/pages/materials-pages.ts` | Guide | ArmorSim first-test recipes | Set up a first solve per configuration | Armor configurations / Solver modes | Materials hub | Solver + material + penetrator + output per configuration. |
+| `/replay-sharing` | `src/data/pages/materials-pages.ts` | Wiki | ArmorSim replay sharing | Save / share replay files | Gameplay / Discord | Materials hub | Couple-of-MB ULTRA replay files. |
+| `/wiki` | `src/data/pages/community-pages.ts` | Guide | ArmorSim wiki & FAQ | Get short answers | Discord / Release Info | Community hub | Community Hub as current FAQ. |
+| `/discord` | `src/data/pages/community-pages.ts` | Utility | ArmorSim official Discord | Join the verified invite | Wiki / Replay sharing | Community hub | Source from Steam sidebar. |
+| `/about` | `src/data/pages/site-pages.ts` | Utility | about ArmorSim Wiki | Trust and editorial policy | Contact | Trust | Explain unofficial status and sourcing rules. |
+| `/contact` | `src/data/pages/site-pages.ts` | Utility | contact ArmorSim Wiki | Corrections and source updates | About | Trust | Contact channel pending. |
 | `/privacy-policy` | `src/data/pages/site-pages.ts` | Legal | privacy policy | Privacy and analytics | Terms | Trust | GA4 only when configured. |
 | `/terms` | `src/data/pages/site-pages.ts` | Legal | terms of use | Site use expectations | Privacy Policy | Trust | Keep unofficial disclaimer clear. |
 
