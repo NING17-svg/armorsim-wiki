@@ -45,14 +45,13 @@ export const sitePages: PageContent[] = [
     faqIds: [
       "what-is-this-site",
       "is-official",
-      "release-date-known",
-      "platforms-known",
-      "guide-depth",
+      "release-date-confirmed",
+      "platforms",
     ],
-    relatedPageIds: ["wiki", "guides", "release-date", "about"],
+    relatedPageIds: ["wiki", "guides", "fixed-release-date-status-en-US", "about"],
     schemaTypes: ["FAQPage", "BreadcrumbList"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: "2026-09-15",
   },
   {
     id: "about",
@@ -102,7 +101,7 @@ export const sitePages: PageContent[] = [
     relatedPageIds: ["contact", "privacy-policy", "terms"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: "2026-09-15",
   },
   {
     id: "contact",
@@ -152,7 +151,7 @@ export const sitePages: PageContent[] = [
     relatedPageIds: ["about", "privacy-policy", "terms"],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: "2026-09-15",
   },
   {
     id: "privacy-policy",
@@ -209,7 +208,7 @@ export const sitePages: PageContent[] = [
     relatedPageIds: ["about", "contact", "terms"],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: "2026-09-15",
   },
   {
     id: "terms",
@@ -266,6 +265,6 @@ export const sitePages: PageContent[] = [
     relatedPageIds: ["about", "contact", "privacy-policy"],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: "2026-09-15",
   },
 ];

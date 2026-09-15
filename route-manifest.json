@@ -1,0 +1,212 @@
+[
+  {
+    "id": "home",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "about",
+    "translationKey": "about",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/about",
+    "alternates": {
+      "en-US": "/about"
+    }
+  },
+  {
+    "id": "fixed-penetrators-ammo-guide-en-US",
+    "translationKey": "penetrators-ammo-guide",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/ammunition",
+    "alternates": {
+      "en-US": "/ammunition"
+    }
+  },
+  {
+    "id": "fixed-armor-configurations-en-US",
+    "translationKey": "armor-configurations",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/armor-configurations",
+    "alternates": {
+      "en-US": "/armor-configurations"
+    }
+  },
+  {
+    "id": "fixed-armor-materials-guide-en-US",
+    "translationKey": "armor-materials-guide",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/armor-materials",
+    "alternates": {
+      "en-US": "/armor-materials"
+    }
+  },
+  {
+    "id": "fixed-beginners-guide-en-US",
+    "translationKey": "beginners-guide",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/beginners-guide",
+    "alternates": {
+      "en-US": "/beginners-guide"
+    }
+  },
+  {
+    "id": "contact",
+    "translationKey": "contact",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/contact",
+    "alternates": {
+      "en-US": "/contact"
+    }
+  },
+  {
+    "id": "fixed-demo-status-en-US",
+    "translationKey": "demo-status",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/demo",
+    "alternates": {
+      "en-US": "/demo"
+    }
+  },
+  {
+    "id": "fixed-discord-community-en-US",
+    "translationKey": "discord-community",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/discord",
+    "alternates": {
+      "en-US": "/discord"
+    }
+  },
+  {
+    "id": "faq",
+    "translationKey": "faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/faq",
+    "alternates": {
+      "en-US": "/faq"
+    }
+  },
+  {
+    "id": "fixed-gameplay-overview-en-US",
+    "translationKey": "gameplay-overview",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/gameplay",
+    "alternates": {
+      "en-US": "/gameplay"
+    }
+  },
+  {
+    "id": "guides",
+    "translationKey": "guides",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides",
+    "alternates": {
+      "en-US": "/guides"
+    }
+  },
+  {
+    "id": "fixed-penetration-mechanics-en-US",
+    "translationKey": "penetration-mechanics",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/penetration-mechanics",
+    "alternates": {
+      "en-US": "/penetration-mechanics"
+    }
+  },
+  {
+    "id": "fixed-price-editions-en-US",
+    "translationKey": "price-editions",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/price",
+    "alternates": {
+      "en-US": "/price"
+    }
+  },
+  {
+    "id": "privacy-policy",
+    "translationKey": "privacy-policy",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/privacy-policy",
+    "alternates": {
+      "en-US": "/privacy-policy"
+    }
+  },
+  {
+    "id": "fixed-release-date-status-en-US",
+    "translationKey": "release-date-status",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/release-date",
+    "alternates": {
+      "en-US": "/release-date"
+    }
+  },
+  {
+    "id": "fixed-replay-sharing-en-US",
+    "translationKey": "replay-sharing",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/replay-sharing",
+    "alternates": {
+      "en-US": "/replay-sharing"
+    }
+  },
+  {
+    "id": "fixed-solver-modes-comparison-en-US",
+    "translationKey": "solver-modes-comparison",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/solver-modes",
+    "alternates": {
+      "en-US": "/solver-modes"
+    }
+  },
+  {
+    "id": "fixed-system-requirements-en-US",
+    "translationKey": "system-requirements",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/system-requirements",
+    "alternates": {
+      "en-US": "/system-requirements"
+    }
+  },
+  {
+    "id": "terms",
+    "translationKey": "terms",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/terms",
+    "alternates": {
+      "en-US": "/terms"
+    }
+  },
+  {
+    "id": "wiki",
+    "translationKey": "wiki-faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/wiki",
+    "alternates": {
+      "en-US": "/wiki"
+    }
+  }
+]

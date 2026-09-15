@@ -1,19 +1,51 @@
 import type { FAQItem, PageContent, RouteKind } from "@/types/content";
 import { entityFamilies } from "@/data/entities";
 import { faqItems } from "@/data/faq";
-import { guidePages } from "@/data/pages/guide-pages";
 import { homePage } from "@/data/pages/home";
-import { releasePages } from "@/data/pages/release-pages";
+import {
+  releaseDateStatus,
+  demoStatus,
+  priceEditions,
+  systemRequirements,
+} from "@/data/pages/launch-pages";
+import {
+  gameplayOverview,
+  beginnersGuide,
+  solverModesComparison,
+  penetrationMechanics,
+} from "@/data/pages/simulation-loop-pages";
+import {
+  armorMaterialsGuide,
+  penetratorsAmmoGuide,
+  armorConfigurations,
+  replaySharing,
+} from "@/data/pages/materials-pages";
+import {
+  discordCommunity,
+  wikiFaq,
+} from "@/data/pages/community-pages";
 import { sitePages } from "@/data/pages/site-pages";
-import { wikiPages } from "@/data/pages/wiki-pages";
+import { guidePages } from "@/data/pages/guide-pages";
 import { buildEntityPages } from "@/lib/entities";
 import { normalizePath } from "@/lib/localization";
 
 const fixedPages: PageContent[] = [
   homePage,
-  ...wikiPages,
+  releaseDateStatus,
+  demoStatus,
+  priceEditions,
+  systemRequirements,
+  gameplayOverview,
+  beginnersGuide,
+  solverModesComparison,
+  penetrationMechanics,
+  armorMaterialsGuide,
+  penetratorsAmmoGuide,
+  armorConfigurations,
+  replaySharing,
+  discordCommunity,
+  wikiFaq,
   ...guidePages,
-  ...releasePages,
   ...sitePages,
 ];
 
