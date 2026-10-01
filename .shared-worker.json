@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "site_id": "armorsim-wiki",
+  "worker": "armorsim-wiki",
+  "domain": "armorsim.wiki",
+  "repository": "NING17-svg/armorsim-wiki",
+  "deployment_repository": "NING17-svg/game-guide-pool-06",
+  "marker_path": "/__deployment.json",
+  "pool_id": "guide-pool-06"
+}
